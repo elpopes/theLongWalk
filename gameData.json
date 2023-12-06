@@ -1,0 +1,141 @@
+{
+    "start": {
+        "text": "The gun shakes in your hand.",
+        "choices": [
+            {
+                "text": "Put the gun down",
+                "next": "choice1"
+            },
+            {
+                "text": "Pull the trigger",
+                "end": "end1"
+            }
+        ]
+    },
+    "choice1": {
+        "text": "The fanged beast approaches and offers a gift.",
+        "choices": [
+            {
+                "text": "Receive the gift",
+                "next": "choice2"
+            },
+            {
+                "text": "Refuse the gift",
+                "end": "end2"
+            }
+        ]
+    },
+    "choice2": {
+        "text": "A coin, magic and gold...",
+        "choices": [
+            {
+                "text": "Heads",
+                "next": "choice3"
+            },
+            {
+                "text": "Tails",
+                "end": "end3"
+            }
+        ]
+    },
+    "choice3": {
+        "text": "A new door, blood red, appears.",
+        "choices": [
+            {
+                "text": "Knock",
+                "next": "choice4"
+            },
+            {
+                "text": "Go right in",
+                "end": "end4"
+            }
+        ]
+    },
+    "choice4": {
+        "text": "A sweet voice welcomes you to enter.",
+        "choices": [
+            {
+                "text": "Step boldly in",
+                "next": "completion"
+            },
+            {
+                "text": "Hesitate for just a moment",
+                "end": "end5"
+            }
+        ]
+    },
+    "end1": {
+        "text": "You miss and the beast devours you.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "start"
+            }
+        ]
+    },
+    "end2": {
+        "text": "The beast take offense and takes your head, too.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice1"
+            }
+        ]
+    },
+    "end3": {
+        "text": "Heads, you lose.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice2"
+            }
+        ]
+    },
+    "end4": {
+        "text": "You enter into nothingness, swallowed by the abyss.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice3"
+            }
+        ]
+    },
+    "end5": {
+        "text": "The door vanishes, leaving you and the beast alone.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice4"
+            }
+        ]
+    },
+    "completion": {
+        "text": "Such beauty you have never seen, such treasure beyond all imaginings!",
+        "choices": [
+            {
+                "text": "Play Again",
+                "next": "start"
+            }
+        ]
+    }
+}

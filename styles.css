@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.game-text {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice-btn {
+  background-color: darkred;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.choice-btn:hover {
+  background-color: red;
+}
+
+@media (max-width: 600px) {
+  .choice-btn {
+    flex-grow: 0;
+    width: 45%;
+  }
+}
