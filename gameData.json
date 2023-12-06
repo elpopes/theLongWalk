@@ -1,13 +1,13 @@
 {
     "start": {
-        "text": "The gun shakes in your hand.",
+        "text": "The sword rattles in your hand.",
         "choices": [
             {
-                "text": "Put the gun down",
+                "text": "Lower the sword",
                 "next": "choice1"
             },
             {
-                "text": "Pull the trigger",
+                "text": "Strike the beast down",
                 "end": "end1"
             }
         ]
