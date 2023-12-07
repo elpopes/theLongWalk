@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let previousScene = null;
   let gameData = {};
 
-  fetch("gameData.json")
+  fetch("gameData2.json")
     .then((response) => response.json())
     .then((data) => {
       gameData = data;
@@ -19,9 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sceneData = gameData[scene];
     gameTextElement.textContent = sceneData.text;
 
-    // Shuffle choices if there are two choices
     if (sceneData.choices.length === 2) {
-      // Randomly decide if choices should be swapped
       if (Math.random() > 0.5) {
         [sceneData.choices[0], sceneData.choices[1]] = [
           sceneData.choices[1],
@@ -30,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Display choices
     choice1Button.textContent = sceneData.choices[0].text;
     choice1Button.onclick = () =>
       changeScene(sceneData.choices[0].next || sceneData.choices[0].end, scene);

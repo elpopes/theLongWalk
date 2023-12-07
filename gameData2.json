@@ -1,0 +1,141 @@
+{
+    "start": {
+        "text": "You have brushed your teeth and combed your hair. You put on your comfies and climbed into bed. This story begins when you fall asleep.",
+        "choices": [
+            {
+                "text": "Close your eyes",
+                "next": "choice1"
+            },
+            {
+                "text": "Stay up all night",
+                "end": "end1"
+            }
+        ]
+    },
+    "choice1": {
+        "text": "A strange sound wakes you up and you open your eyes to a bright blue sky. The clouds look like giant marshmallows and the air smells like strawberries and vanilla. The grass beneath you is shaggy and soft.",
+        "choices": [
+            {
+                "text": "Sit up",
+                "next": "choice2"
+            },
+            {
+                "text": "Don't move",
+                "end": "end2"
+            }
+        ]
+    },
+    "choice2": {
+        "text": "You look around and see that you are on a pink hill overlooking a clear stream. Beyond the stream there is a castle made of glass and gold. You hear the noise again and realize it is coming from behind you.",
+        "choices": [
+            {
+                "text": "Turn around",
+                "next": "choice3"
+            },
+            {
+                "text": "Run away",
+                "end": "end3"
+            }
+        ]
+    },
+    "choice3": {
+        "text": "You turn to see a very big dragon...",
+        "choices": [
+            {
+                "text": "Knock",
+                "next": "choice4"
+            },
+            {
+                "text": "Go right in",
+                "end": "end4"
+            }
+        ]
+    },
+    "choice4": {
+        "text": "A sweet voice welcomes you to enter.",
+        "choices": [
+            {
+                "text": "Step boldly in",
+                "next": "completion"
+            },
+            {
+                "text": "Hesitate for just a moment",
+                "end": "end5"
+            }
+        ]
+    },
+    "end1": {
+        "text": "You miss and the beast devours you.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "start"
+            }
+        ]
+    },
+    "end2": {
+        "text": "The beast take offense and takes your head, too.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice1"
+            }
+        ]
+    },
+    "end3": {
+        "text": "Heads, you lose.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice2"
+            }
+        ]
+    },
+    "end4": {
+        "text": "You enter into nothingness, swallowed by the abyss.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice3"
+            }
+        ]
+    },
+    "end5": {
+        "text": "The door vanishes, leaving you and the beast alone.",
+        "choices": [
+            {
+                "text": "Restart Game",
+                "next": "start"
+            },
+            {
+                "text": "Go Back",
+                "next": "choice4"
+            }
+        ]
+    },
+    "completion": {
+        "text": "Such beauty you have never seen, such treasure beyond all imaginings!",
+        "choices": [
+            {
+                "text": "Play Again",
+                "next": "start"
+            }
+        ]
+    }
+}
