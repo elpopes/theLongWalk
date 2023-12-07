@@ -19,25 +19,32 @@ document.addEventListener("DOMContentLoaded", () => {
     const sceneData = gameData[scene];
     gameTextElement.textContent = sceneData.text;
 
-    if (sceneData.choices.length > 0) {
-      choice1Button.textContent = sceneData.choices[0].text;
-      choice1Button.onclick = () =>
+    // Shuffle choices if there are two choices
+    if (sceneData.choices.length === 2) {
+      // Randomly decide if choices should be swapped
+      if (Math.random() > 0.5) {
+        [sceneData.choices[0], sceneData.choices[1]] = [
+          sceneData.choices[1],
+          sceneData.choices[0],
+        ];
+      }
+    }
+
+    // Display choices
+    choice1Button.textContent = sceneData.choices[0].text;
+    choice1Button.onclick = () =>
+      changeScene(sceneData.choices[0].next || sceneData.choices[0].end, scene);
+
+    if (sceneData.choices.length > 1) {
+      choice2Button.style.display = "block";
+      choice2Button.textContent = sceneData.choices[1].text;
+      choice2Button.onclick = () =>
         changeScene(
-          sceneData.choices[0].next || sceneData.choices[0].end,
+          sceneData.choices[1].next || sceneData.choices[1].end,
           scene
         );
-
-      if (sceneData.choices.length > 1) {
-        choice2Button.style.display = "block";
-        choice2Button.textContent = sceneData.choices[1].text;
-        choice2Button.onclick = () =>
-          changeScene(
-            sceneData.choices[1].next || sceneData.choices[1].end,
-            scene
-          );
-      } else {
-        choice2Button.style.display = "none";
-      }
+    } else {
+      choice2Button.style.display = "none";
     }
   }
 
