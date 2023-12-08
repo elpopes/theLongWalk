@@ -13,12 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.text())
     .then((markdown) => {
       gameData = convertMarkdownToJson(markdown);
+      console.log("Generated gameData:", gameData);
       displayScene(currentScene);
     })
     .catch((error) => console.error("Error loading game data:", error));
 
   function displayScene(scene) {
     const sceneData = gameData[scene];
+    if (!sceneData) {
+      console.error("Scene data not found for scene:", scene);
+      return;
+    }
+
     gameTextElement.textContent = sceneData.text;
 
     if (sceneData.choices.length === 2) {
@@ -48,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function changeScene(nextScene, current) {
-    if (nextScene === "previous") {
-      displayScene(previousScene);
+    if (nextScene === "start") {
+      displayScene("start");
     } else {
       previousScene = current;
       currentScene = nextScene;
