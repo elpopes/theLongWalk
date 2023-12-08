@@ -23,36 +23,36 @@ You look around and see that you are on a pink hill overlooking a clear stream. 
 
 You turn to see a very big dragon with silver scales and fiery orange eyes. Giant white teeth bite into a giant bone that's bigger than you.
 
-- [Approach the dragon](#Choice4)
-- [Hide behind a rock](#End3)
+- [Approach the dragon](#choice4)
+- [Hide behind a rock](#end3)
 
 # Choice4
 
 The dragon looks at you curiously but does not seem hostile. Behind it, you notice a path leading to a mysterious forest.
 
-- [Walk towards the forest](#Choice5)
-- [Try to take the dragon's bone](#End4)
+- [Walk towards the forest](#choice5)
+- [Try to take the dragon's bone](#end4)
 
 # Choice5
 
 As you enter the forest, the trees seem to whisper secrets. A small, glowing orb floats in front of you, leading the way.
 
-- [Follow the orb](#Choice6)
-- [Ignore the orb and explore the forest](#End5)
+- [Follow the orb](#choice6)
+- [Ignore the orb and explore the forest](#end5)
 
 # Choice6
 
 The orb leads you to a clearing where a cutie fairy sits on a flower. She offers you two flowers: one blue, one red.
 
-- [Drink the blue potion](#Choice7)
-- [Drink the red potion](#End6)
+- [Drink the blue potion](#choice7)
+- [Drink the red potion](#end6)
 
 # Choice7
 
 After drinking the blue potion, the world spins, and you find yourself in a grand hall with a festive banquet laid out.
 
-- [Join the banquet](#Completion)
-- [Search for a way out](#End7)
+- [Join the banquet](#completion)
+- [Search for a way out](#end7)
 
 # End1
 

@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.text())
     .then((markdown) => {
       gameData = convertMarkdownToJson(markdown);
-      console.log("Generated gameData:", gameData);
       displayScene(currentScene);
     })
     .catch((error) => console.error("Error loading game data:", error));
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function changeScene(nextScene, current) {
-    if (nextScene === "start") {
+    if (nextScene === "Start") {
       displayScene("start");
     } else {
       previousScene = current;
