@@ -1,3 +1,5 @@
+import { convertMarkdownToJson } from "./convertMarkdownToJson.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const gameTextElement = document.getElementById("gameText");
   const choice1Button = document.getElementById("choice1");
@@ -7,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let previousScene = null;
   let gameData = {};
 
-  fetch("gameData2.json")
-    .then((response) => response.json())
-    .then((data) => {
-      gameData = data;
+  fetch("gameData.md")
+    .then((response) => response.text())
+    .then((markdown) => {
+      gameData = convertMarkdownToJson(markdown);
       displayScene(currentScene);
     })
     .catch((error) => console.error("Error loading game data:", error));
